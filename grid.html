@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This is the head section where you can include metadata, scripts, and styles -->
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!-- First Grid -->
+    <div style="
+      display: grid;                                                                           /* Defines the element as a grid container */
+      grid-template-columns: 100px 100px;                                                      /* Defines the number and size of the columns in the grid */
+    ">
+      <div style="background-color: 
+      lightblue;">div 1</div> <!-- First grid item -->
+      <div style="background-color: 
+      lightpink;">div 2<p>text</p></div> <!-- Second grid item with text -->
+    </div>
+
+    <!-- Second Grid -->
+    <div style="
+      margin-top: 30px;
+      display: grid;                                                                          /* Defines the element as a grid container */
+      grid-template-columns: 100px 100px 200px;                                              /* Defines the number and size of the columns in the grid */                                                
+    ">
+      <div style="background-color: 
+      lightblue;">100px</div> <!-- First grid item -->
+      <div style="background-color: 
+      lightpink;">100px<p>text</p></div> <!-- Second grid item with text -->
+      <div style="background-color: 
+      lightblue;">200px</div> <!-- Third grid item -->
+      <div style="background-color: 
+      lightpink;">100px</div> <!-- Fourth grid item -->
+    </div>
+
+    <!-- Third Grid -->
+    <div style="
+      margin-top: 30px;
+      display: grid;                                                                           /* Defines the element as a grid container */
+      grid-template-columns: 100px 1fr;                                                        /* Defines the number and size of the columns in the grid */                                                      
+    ">
+      <div style="background-color: 
+      lightblue;">100px</div> <!-- First grid item -->
+      <div style="background-color: 
+      lightpink;">1fr</div> <!-- Second grid item -->
+    </div>
+
+    <!-- Fourth Grid -->
+    <div style="
+      margin-top: 30px;
+      display: grid;                                                                            /* Defines the element as a grid container */
+      grid-template-columns: 100px 1fr 2fr;                                                     /* Defines the number and size of the columns in the grid */
+    ">
+      <div style="background-color: 
+      lightblue;">100px</div> <!-- First grid item -->
+      <div style="background-color: 
+      lightpink;">1fr</div> <!-- Second grid item -->
+      <div style="background-color: 
+      lightblue;">2fr</div> <!-- Third grid item -->
+    </div>
+
+    <!-- Fifth Grid -->
+    <div style="
+      margin-top: 30px;
+      display: grid;                                                                           /* Defines the element as a grid container */
+      grid-template-columns: 1fr 1fr 1fr;                                                     /* Defines the number and size of the columns in the grid */
+      column-gap: 20px;                                                                      /* Sets the gap between columns in the grid */
+      row-gap: 40px;                                                                         /* Sets the gap between rows in the grid */
+    ">
+      <div style="background-color: 
+      lightblue; height: 200px;">1fr</div> <!-- First grid item -->
+      <div style="background-color: 
+      lightpink; height: 200px;">1fr</div> <!-- Second grid item -->
+      <div style="background-color: 
+      lightblue; height: 200px;">1fr</div> <!-- Third grid item -->
+      <div style="background-color: 
+      lightpink; height: 200px;">1fr</div> <!-- Fourth grid item -->
+      <div style="background-color: 
+      lightblue; height: 200px;">1fr</div> <!-- Fifth grid item -->
+      <div style="background-color: 
+      lightpink; height: 200px;">1fr</div> <!-- Sixth grid item -->
+    </div>
+  </body>
+</html>
+

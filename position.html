@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the HTML page -->
+    <title>Position Practice</title> 
+  </head>
+  <body style="
+    height: 3000px;                                        /* Setting the height of the body */
+    padding-top: 60px;                                     /* Adding padding to the top of the body */
+    padding-left: 80px;                                    /* Adding padding to the left of the body */
+  ">
+    <div style="
+      background-color: black;                           /* Setting the background color of the header */
+      color: white;                                     /* Setting the text color of the header */
+      position: fixed;                                    /* Fixing the header position to stay at the top */
+      top: 0;                                             /* Positioning the header at the top of the page */
+      left: 0;                                            /* Positioning the header at the left of the page */
+      right: 0;                                           /* Positioning the header at the right of the page */
+      height: 50px;                                      /* Setting the height of the header */
+      z-index: 1;                                        /* Setting the stack order of the header */
+    ">header
+    </div>
+    
+    <div style="
+      background-color: green;                        /* Setting the background color of the sidebar */
+      color: white;                                   /* Setting the text color of the sidebar */
+      position: fixed;                                  /* Fixing the sidebar position to stay at the left */
+      left: 0;                                          /* Positioning the sidebar at the left of the page */
+      bottom: 0;                                        /* Positioning the sidebar at the bottom of the page */
+      top: 50px;                                        /* Setting the top position of the sidebar */
+      width: 72px;                                     /* Setting the width of the sidebar */
+    ">sidebar
+      <div style="
+        position: absolute;                            /* Setting the position of the X to be absolute */
+        background-color: red;                       /* Setting the background color of the X */
+        color: white;                                /* Setting the text color of the X */
+        top: 0px;                                      /* Positioning the X at the top of the sidebar */
+        right: 0px;                                    /* Positioning the X at the right of the sidebar */
+      ">X
+      </div>
+    </div>
+
+    <div style="
+      position: absolute;                              /* Setting the position of the 'absolute' div to be absolute */
+      background-color: red;                         /* Setting the background color of the 'absolute' div */
+      color: white;                                  /* Setting the text color of the 'absolute' div */
+      top: 60px;                                       /* Positioning the 'absolute' div at 60px from the top */
+      right: 10px;                                     /* Positioning the 'absolute' div at 10px from the right */
+    ">absolute
+    </div>
+    
+    <div style="
+      background-color: lightblue;                    /* Setting the background color of div 1 */
+      height: 200px;                                    /* Setting the height of div 1 */
+      width: 200px;                                     /* Setting the width of div 1 */
+      position: static;                                 /* By default it will be 'position: static' */
+    ">div 1
+    </div>
+    
+    <div style="
+      background-color: lightpink;                    /* Setting the background color of div 2 */
+      height: 200px;                                    /* Setting the height of div 2 */
+      width: 200px;                                     /* Setting the width of div 2 */
+      position: relative;                               /* Setting the position of div 2 to be relative */
+    ">div 2
+      <div style="
+        position: absolute;                             /* Setting the position of the inner div to be absolute */
+        background-color: black;                      /* Setting the background color of the inner div */
+        color: white;                                /* Setting the text color of the inner div */
+        bottom: 10px;                                  /* Positioning the inner div at 10px from the bottom of div 2 */
+        right: 10px;                                   /* Positioning the inner div at 10px from the right of div 2 */
+      ">5:00
+      </div>
+    </div>
+  </body>
+</html>

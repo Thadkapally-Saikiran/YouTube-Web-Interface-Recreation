@@ -1,0 +1,383 @@
+<!--
+  KEY POINTS:
+      1) In HTML there are 3 types of elements:
+          i) block element = takes up the entire line. Example:- A paragraph by default a block element.because it takes upto end of line.
+          ii) inline-block element = it only takes up as much space as needed Like an image element,input element.
+          iii) inline element = appear within a line of text.inline elements are basically just text elements.
+          NOTE:1) The pargraphs/text are by default the 'display:block'
+               2)These determine how these elements are displayed on the page, whether beside eachother or above and below.In addition we can 
+                 use a CSS property called 'display' to easily switch between block and inline block.
+
+      2) <div> = division/section/just a box/containers. A 'div' element is most widely used in most webistes like insta,twitter etc..By default the <div> is 
+        'display:block'. We can put any other elements,paragraphs,iamges etc.. inside a 'div' aswell as other 'div' elements.In order to build real world 
+        websites we need containers to group our elements together and lay them out on the page.
+
+      3) 'Roboto, Arial;' this synatx with comma is called 'font stack'.It basically set up a back up font.If for whatever reason Roboto fail to load from
+                          Google,then it will fall back to our backup font,which is aerial.
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The title of the webpage -->
+    <title>YouTube.com Clone</title>
+
+    <!-- Links to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Links to external CSS stylesheets -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+    <!-- The header section of the webpage -->
+    <header class="header">
+      <div class="left-section">
+        <!-- Hamburger menu icon -->
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <!-- YouTube logo icon -->
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <!-- Search bar -->
+        <input class="search-bar" type="text" placeholder="Search">
+        <!-- Search button -->
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Voice search button -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <!-- Create/upload icon -->
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <!-- YouTube apps icon -->
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <!-- Notifications icon -->
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <!-- Number of notifications -->
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <!-- Current user's profile picture -->
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+      </div>
+    </header>
+
+    <!-- This is the navigation sidebar -->
+    <nav class="sidebar">
+      <!-- Home link -->
+      <div class="sidebar-link">
+        <img src="icons/home.svg"> <!-- Home icon -->
+        <div>Home</div> <!-- Home text -->
+      </div>
+      <!-- Explore link -->
+      <div class="sidebar-link">
+        <img src="icons/explore.svg"> <!-- Explore icon -->
+        <div>Explore</div> <!-- Explore text -->
+      </div>
+      <!-- Subscriptions link -->
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg"> <!-- Subscriptions icon -->
+        <div>Subscriptions</div> <!-- Subscriptions text -->
+      </div>
+      <!-- Originals link -->
+      <div class="sidebar-link">
+        <img src="icons/originals.svg"> <!-- Originals icon -->
+        <div>Originals</div> <!-- Originals text -->
+      </div>
+      <!-- YouTube Music link -->
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg"> <!-- YouTube Music icon -->
+        <div>YouTube Music</div> <!-- YouTube Music text -->
+      </div>
+      <!-- Library link -->
+      <div class="sidebar-link">
+        <img src="icons/library.svg"> <!-- Library icon -->
+        <div>Library</div> <!-- Library text -->
+      </div>
+    </nav>
+    
+    <!-- This is the main section of the webpage -->
+    <main>
+      <!-- This section contains a grid of videos -->
+      <section class="video-grid">
+        <!-- Each video is displayed within a video preview section -->
+        <div class="video-preview">
+          <!-- The row containing the thumbnail and video duration -->
+          <div class="thumbnail-row">
+            <!-- Link to the video on YouTube -->
+            <a href="https://youtu.be/n2RNcPRtAiY?si=dNtF35cdIApztcPS">
+              <!-- Thumbnail image of the video -->
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <!-- Display the duration of the video -->
+            <div class="video-time">14:20</div>
+          </div>
+          <!-- Grid for video information -->
+          <div class="video-info-grid">
+            <!-- Display the channel picture and link to the video -->
+            <div class="channel-picture">
+              <a href="https://youtu.be/n2RNcPRtAiY?si=dNtF35cdIApztcPS">
+                <!-- Profile picture of the channel -->
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+              </a>
+            </div>
+            <!-- Display video information such as title, author, and statistics -->
+            <div class="video-info">
+              <!-- Title of the video with a link to the video -->
+              <p class="video-title">
+                <a href="https://youtu.be/n2RNcPRtAiY?si=dNtF35cdIApztcPS" style="text-decoration:none; color: inherit">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </a>
+              </p>
+              <!-- Author of the video with a link to the channel -->
+              <p class="video-author">
+                <a href="https://youtu.be/n2RNcPRtAiY?si=dNtF35cdIApztcPS" style="text-decoration:none; color: inherit">
+                  Marques Brownlee
+                </a>               
+              </p>
+              <!-- Statistics of the video, including views and upload date -->
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>
+          </div>  
+        </div>                                                                                                                                                                                                                      
+                                                                                                                                                                                                                    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/mP0RAo9SKZk?si=bX5GAaQ52OfraDF1">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/mP0RAo9SKZk?si=bX5GAaQ52OfraDF1">
+                <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/mP0RAo9SKZk?si=bX5GAaQ52OfraDF1" style="text-decoration:none; color: inherit">
+                  Try Not To Laugh Challenge #9                
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/mP0RAo9SKZk?si=bX5GAaQ52OfraDF1" style="text-decoration:none; color: inherit">
+                  Markiplier                
+                </a>
+              </p>
+              <p class="video-stats">
+                19M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/FgjPQQeTh1w?si=eq9QgXDZ_jlrZFna">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/FgjPQQeTh1w?si=eq9QgXDZ_jlrZFna">
+                <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/FgjPQQeTh1w?si=eq9QgXDZ_jlrZFna" style="text-decoration:none; color: inherit">
+                  Crazy Tik Toks Taken Moments Before DISASTER                
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/FgjPQQeTh1w?si=eq9QgXDZ_jlrZFna" style="text-decoration:none; color: inherit">
+                  SSSniperWolf                
+                </a>
+              </p>
+              <p class="video-stats">
+                12M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/094y1Z2wpJg?si=wsdRVKJGfpSDKZut">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/094y1Z2wpJg?si=wsdRVKJGfpSDKZut">
+                <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/094y1Z2wpJg?si=wsdRVKJGfpSDKZut" style="text-decoration:none; color: inherit">
+                  The Simplest Math Problem No One Can Solve - Collatz Conjecture                
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/094y1Z2wpJg?si=wsdRVKJGfpSDKZut" style="text-decoration:none; color: inherit">
+                  Veritasium                
+                </a>
+              </p>
+              <p class="video-stats">
+                18M views &#183; 4 months ago
+              </p>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/86CQq3pKSUw?si=s2XoziTK07Ww5JSm">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/86CQq3pKSUw?si=s2XoziTK07Ww5JSm">
+                <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/86CQq3pKSUw?si=s2XoziTK07Ww5JSm" style="text-decoration:none; color: inherit">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem                
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/86CQq3pKSUw?si=s2XoziTK07Ww5JSm" style="text-decoration:none; color: inherit">
+                  CS Dojo
+                </a>
+              </p>
+              <p class="video-stats">
+                519K views &#183; 5 years ago
+              </p>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/yXWw0_UfSFg?si=PqNzpG0vyfbPrRd3">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/yXWw0_UfSFg?si=PqNzpG0vyfbPrRd3">
+                <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/yXWw0_UfSFg?si=PqNzpG0vyfbPrRd3" style="text-decoration:none; color: inherit">
+                  Anything You Can Fit In The Circle I'll Pay For
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/yXWw0_UfSFg?si=PqNzpG0vyfbPrRd3" style="text-decoration:none; color: inherit">
+                  MrBeast
+                </a>
+              </p>
+              <p class="video-stats">
+                141M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/sseuVRiWjXs?feature=shared">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/sseuVRiWjXs?feature=shared">
+                <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/sseuVRiWjXs?feature=shared" style="text-decoration:none; color: inherit">
+                  Foreigner Tries Spicy Navi Mumbai Street Food 🇮🇳
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/sseuVRiWjXs?feature=shared" style="text-decoration:none; color: inherit">
+                  Madly Rover
+                </a>
+              </p>
+              <p class="video-stats">
+                193K views &#183; 9 months ago
+              </p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/xrYDlx8evR0?feature=shared">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtu.be/xrYDlx8evR0?feature=shared">
+                <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://youtu.be/xrYDlx8evR0?feature=shared" style="text-decoration:none; color: inherit">
+                  Selenium Headless Scraping For Servers & Docker
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://youtu.be/xrYDlx8evR0?feature=shared" style="text-decoration:none; color: inherit">
+                  NeuralNine
+                </a>
+              </p>
+              <p class="video-stats">
+                5.7K views &#183; 11 days ago
+              </p>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
