@@ -1,0 +1,195 @@
+/* Styling for the header section */
+.header {
+  height: 55px; /* Set the height of the header */
+
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+
+  position: fixed; /* Fix the header position */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 100; /* Set the stacking order of the header */
+
+  background-color: white; /* Set the background color to white */
+  border-bottom-width: 1px; /* Set the border bottom width */
+  border-bottom-style: solid; /* Set the border bottom style */
+  border-bottom-color: rgb(228, 228, 228); /* Set the border bottom color */
+}
+
+/* Styling for the left section of the header */
+.left-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items along the cross axis */
+}
+
+/* Styling for the hamburger menu icon */
+.hamburger-menu {
+  height: 24px; /* Set the height of the hamburger menu icon */
+  margin-left: 24px; /* Set the left margin */
+  margin-right: 24px; /* Set the right margin */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styling for the YouTube logo */
+.youtube-logo {
+  height: 20px; /* Set the height of the YouTube logo */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styling for the middle section of the header */
+.middle-section {
+  flex: 1; /* Allow the section to grow or shrink as needed */
+  margin-left: 70px; /* Set the left margin */
+  margin-right: 35px; /* Set the right margin */
+  max-width: 500px; /* Set the maximum width */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items along the cross axis */
+}
+
+/* Styling for the search bar */
+.search-bar {
+  flex: 1; /* Allow the search bar to grow or shrink as needed */
+  height: 36.5px; /* Set the height of the search bar */
+  padding-left: 10px; /* Set the left padding */
+  font-size: 16px; /* Set the font size */
+  border: 1px solid rgb(192, 192, 192); /* Set the border style and color */
+  border-radius: 2px; /* Set the border radius */
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); /* Add a box shadow */
+  width: 0; /* Set the initial width */
+}
+
+/* Styling for the placeholder text in the search bar */
+.search-bar::placeholder {
+  font-size: 16px; /* Set the font size for the placeholder text */
+}
+
+/* Styling for the search button */
+.search-button {
+  height: 40px; /* Set the height of the search button */
+  width: 66px; /* Set the width of the search button */
+  background-color: rgb(240, 240, 240); /* Set the background color */
+  border-width: 1px; /* Set the border width */
+  border-style: solid; /* Set the border style */
+  border-color: rgb(192, 192, 192); /* Set the border color */
+  margin-left: -1px; /* Set the left margin */
+  margin-right: 10px; /* Set the right margin */
+}
+
+/* Styling for various icons and their containers */
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
+  display: flex; /* Use flexbox for layout */
+  position: relative; /* Set the position to relative */
+  justify-content: center; /* Align items in the center along the main axis */
+  align-items: center; /* Align items along the cross axis */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styling for the tooltip of various icons */
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+  position: absolute; /* Set the position to absolute */
+  background-color: gray; /* Set the background color of the tooltip */
+  color: white; /* Set the text color of the tooltip */
+  padding-top: 8px; /* Set the top padding */
+  padding-bottom: 8px; /* Set the bottom padding */
+  padding-left: 8px; /* Set the left padding */
+  padding-right: 8px; /* Set the right padding */
+  border-radius: 2px; /* Set the border radius */
+  font-size: 12px; /* Set the font size */
+  bottom: -45px; /* Set the bottom position */
+  opacity: 0; /* Set the initial opacity to 0 */
+  transition: opacity 0.20s; /* Set the transition effect for opacity */
+  pointer-events: none; /* Disable pointer events */
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+/* Styling for the tooltip on hover */
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1; /* Set the opacity to 1 on hover */
+}
+
+/* Styling for the search icon */
+.search-icon {
+  height: 25px; /* Set the height of the search icon */
+}
+
+/* Styling for the voice search button */
+.voice-search-button {
+  height: 40px; /* Set the height of the voice search button */
+  width: 40px; /* Set the width of the voice search button */
+  border-radius: 20px; /* Set the border radius */
+  border: none; /* Remove the border */
+  background-color: rgb(245, 245, 245); /* Set the background color */
+}
+
+/* Styling for the voice search icon */
+.voice-search-icon {
+  height: 24px; /* Set the height of the voice search icon */
+}
+
+/* Styling for the right section of the header */
+.right-section {
+  width: 180px; /* Set the width of the right section */
+  margin-right: 20px; /* Set the right margin */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items along the cross axis */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  flex-shrink: 0; /* Prevent shrinking of the section */
+}
+
+/* Styling for the upload icon */
+.upload-icon {
+  height: 24px; /* Set the height of the upload icon */
+}
+
+/* Styling for the YouTube apps icon */
+.youtube-apps-icon {
+  height: 24px; /* Set the height of the YouTube apps icon */
+}
+
+/* Styling for the notifications icon */
+.notifications-icon {
+  height: 24px; /* Set the height of the notifications icon */
+}
+
+/* Styles for the container of the notifications icon */
+.notifications-icon-container {
+  position: relative; /* Establishes a relative position context for child elements */
+}
+
+/* Styles for the count displayed on the notifications icon */
+.notifications-count {
+  position: absolute; /* Positions the element absolutely within its containing element */
+  top: -2px; /* Positions the element 2 pixels above the top of its original position */
+  right: -5px; /* Positions the element 5 pixels to the left of its original position */
+  background-color: rgb(200, 0, 0); /* Sets the background color to a shade of red */
+  color: white; /* Sets the text color to white */
+  font-size: 11px; /* Sets the font size to 11 pixels */
+  padding-left: 5px; /* Adds 5 pixels of padding to the left of the content */
+  padding-right: 5px; /* Adds 5 pixels of padding to the right of the content */
+  padding-top: 2px; /* Adds 2 pixels of padding to the top of the content */
+  padding-bottom: 2px; /* Adds 2 pixels of padding to the bottom of the content */
+  border-radius: 10px; /* Rounds the corners of the element to create a circular shape */
+}
+
+/* Styles for the current user's profile picture */
+.current-user-picture {
+  height: 32px; /* Sets the height of the picture to 32 pixels */
+  border-radius: 16px; /* Rounds the corners of the picture to create a circular shape */
+  cursor: pointer; /* Converts the cursor to a pointer when hovering over the picture */
+}
+
+

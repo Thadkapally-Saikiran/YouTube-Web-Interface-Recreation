@@ -1,0 +1,37 @@
+/* Styling for the sidebar */
+.sidebar {
+  position: fixed; /* Sets the position of the sidebar to be fixed */
+  left: 0; /* Aligns the sidebar to the left side of the screen */
+  bottom: 0; /* Positions the sidebar at the bottom of the screen */
+  top: 55px; /* Leaves a space of 55px from the top of the screen */
+  background-color: white; /* Sets the background color of the sidebar to white */
+  width: 72px; /* Sets the width of the sidebar to 72px */
+  z-index: 200; /* Sets the stack order of the sidebar */
+  padding-top: 5px; /* Sets the top padding of the sidebar content */
+}
+
+/* Styling for the links inside the sidebar */
+.sidebar-link {
+  height: 74px; /* Sets the height of each link in the sidebar */
+  display: flex; /* Sets the display property to flex */
+  justify-content: center; /* Aligns items in the center horizontally */
+  align-items: center; /* Aligns items in the center vertically */
+  flex-direction: column; /* Sets the flex direction to column */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+/* Styling for the hover effect on the links */
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235); /* Changes the background color when hovering over a link */
+}
+
+/* Styling for the images inside the sidebar links */
+.sidebar-link img {
+  height: 24px; /* Sets the height of the images to 24px */
+  margin-bottom: 4px; /* Adds a bottom margin of 4px to the images */
+}
+
+/* Styling for the text inside the sidebar links */
+.sidebar-link {
+  font-size: 10px; /* Sets the font size of the text inside the links to 10px */
+}

@@ -1,0 +1,84 @@
+/* This style sets the width of the thumbnail to 100% */
+.thumbnail {
+  width: 100%;
+}
+
+/* Styling for the video title */
+.video-title {
+  margin-top: 0; /* Removes the default margin from the top */
+  font-size: 14px; /* Sets the font size to 14 pixels */
+  font-weight: 500; /* Sets the font weight to 500 */
+  line-height: 20px; /* Sets the line height to 20 pixels */
+  margin-bottom: 10px; /* Sets the margin at the bottom to 10 pixels */
+}
+
+/* Defines the grid layout for video information */
+.video-info-grid {
+  display: grid; /* Uses the CSS grid for layout */
+  grid-template-columns: 50px 1fr; /* Sets the grid template columns */
+}
+
+/* Styling for the profile picture */
+.profile-picture {
+  width: 36px; /* Sets the width of the profile picture to 36 pixels */
+  border-radius: 50px; /* Applies a border radius of 50 pixels for a circular shape */
+}
+
+/* Sets the margin at the bottom for the thumbnail row */
+.thumbnail-row {
+  margin-bottom: 9px; /* Sets the margin at the bottom to 9 pixels */
+  position: relative; /* Sets the position to relative */
+}
+
+/* Styling for video author and statistics */
+.video-author,
+.video-stats {
+  font-size: 13px; /* Sets the font size to 13 pixels */
+  color: rgb(97, 97, 97); /* Sets the text color using an RGB value */
+}
+
+/* Sets the margin at the bottom for the video author */
+.video-author {
+  margin-bottom: 4px; /* Sets the margin at the bottom to 4 pixels */
+}
+
+/* Defines the grid layout for videos */
+.video-grid {
+  display: grid; /* Uses the CSS grid for layout */
+  grid-template-columns: 1fr 1fr 1fr; /* Sets the grid template columns */
+  column-gap: 16px; /* Sets the gap between columns to 16 pixels */
+  row-gap: 40px; /* Sets the gap between rows to 40 pixels */
+}
+
+/* Media queries for responsive design on smaller screens */
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr; /* Adjusts the grid template columns for smaller screens */
+  }
+}
+
+@media (min-width: 751px) and (max-width:999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* Adjusts the grid template columns for medium-sized screens */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Adjusts the grid template columns for larger screens */
+  }
+}
+
+/* Styling for the video time display */
+.video-time {
+  font-size: 12px; /* Sets the font size to 12 pixels */
+  font-weight: 500; /* Sets the font weight to 500 */
+  padding: 4px; /* Sets the padding around the video time display to 4 pixels */
+  border-radius: 2px; /* Applies a border radius of 2 pixels */
+  background-color: black; /* Sets the background color to black */
+  color: white; /* Sets the text color to white */
+  position: absolute; /* Sets the position to absolute */
+  bottom: 8px; /* Sets the distance from the bottom to 8 pixels */
+  right: 5px; /* Sets the distance from the right to 5 pixels */
+}
