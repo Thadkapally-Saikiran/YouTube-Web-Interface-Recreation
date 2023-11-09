@@ -1,0 +1,56 @@
+/* General styling for paragraph elements */
+p {
+  font-family: 'Roboto', sans-serif; /* Setting the font family for paragraphs */
+  margin-top: 0; /* Removing top margin */
+  margin-bottom: 0; /* Removing bottom margin */
+}
+
+/* Styling for the video title */
+.video-title {
+  font-weight: bold; /* Making the title text bold */
+  font-size: 18px; /* Setting the font size for the title */
+  width: 280px; /* Setting the width for the title */
+  line-height: 24px; /* Setting the line height for the title */
+  margin-bottom: 5px; /* Adding a small margin at the bottom of the title */
+}
+
+/* Styling for video statistics */
+.video-stats {
+  font-size: 14px; /* Setting the font size for video statistics */
+  color: rgb(96, 96, 96); /* Setting the text color for video statistics */
+  margin-bottom: 20px; /* Adding a margin at the bottom of the video statistics */
+}
+
+/* Styling for the video author */
+.video-author {
+  font-size: 14px; /* Setting the font size for the video author */
+  color: rgb(96, 96, 96); /* Setting the text color for the video author */
+  margin-bottom: 20px; /* Adding a margin at the bottom of the video author */
+}
+
+/* Styling for the video description */
+.video-description {
+  font-size: 14px; /* Setting the font size for the video description */
+  color: rgb(96, 96, 96); /* Setting the text color for the video description */
+  width: 280px; /* Setting the width for the video description */
+  line-height: 22px; /* Setting the line height for the video description */
+  margin-bottom: 100px; /* Adding a large margin at the bottom of the video description */
+}
+
+/* Styling for the text with the class "apple-text" */
+.apple-text {
+  margin-bottom: 50px; /* Adding a margin at the bottom of the "apple-text" */
+  font-size: 14px; /* Setting the font size for the "apple-text" */
+  background-color: rgb(227, 65, 64); /* Setting the background color for the "apple-text" */
+  color: white; /* Setting the text color for the "apple-text" */
+  text-align: center; /* Centering the text in the "apple-text" */
+  padding-top: 16px; /* Adding padding to the top of the "apple-text" */
+  padding-bottom: 16px; /* Adding padding to the bottom of the "apple-text" */
+}
+
+/* Styling for the links with the class "shop-link" when hovered over */
+.shop-link:hover {
+  text-decoration: underline; /* Adding underline decoration when the link is hovered over */
+  cursor: pointer; /* Changing the cursor to a pointer when the link is hovered over */
+}
+

@@ -1,0 +1,76 @@
+/* Styling for the subscribe button */
+.subscribe-button {
+  background-color: rgb(200, 0, 0); /* Background color of the button */
+  color: white; /* Text color of the button */
+  border:none; /* 'border:none' removes border from button */
+  padding-right: 16px; /* Padding on the right side of the button */
+  padding-left: 16px; /* Padding on the left side of the button */
+  padding-top: 10px; /* Padding on the top of the button */
+  padding-bottom: 10px; /* Padding on the bottom of the button */
+  border-radius: 2px; /* It is used to make rounded corners of the button */
+  cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+  margin-right: 8px; /* Margin on the right side of the button */
+  margin-left: 20px; /* Margin on the left side of the button */
+  transition: opacity 0.15s; /* Transition effect for the opacity property */
+  vertical-align: top; /* Aligns the button vertically to the top */
+}
+
+/* Styling for the subscribe button when hovered over */
+.subscribe-button:hover {
+  opacity: 0.7; /* Opacity of the button on hover */
+}
+
+/* Styling for the subscribe button when it is active (clicked) */
+.subscribe-button:active {
+ opacity: 0.5; /* Opacity of the button when active (clicked) */
+}
+
+/* Styling for the join button */
+.join-button {
+  background-color: white; /* Background color of the button */
+  border-color: rgb(6, 95, 212); /* Border color of the button */
+  border-style: solid; /* Style of the border */
+  border-width: 1px; /* Width of the border */
+  color: rgb(6, 95, 212); /* Text color of the button */
+  border-radius: 2px; /* Rounded corners of the button */
+  cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+  transition: background-color 0.15s, color 0.15s; /* Transition effect for background color and text color */
+  padding-right: 16px; /* Padding on the right side of the button */
+  padding-left: 16px; /* Padding on the left side of the button */
+  padding-top: 9px; /* Padding on the top of the button */
+  padding-bottom: 9px; /* Padding on the bottom of the button */
+}
+
+/* Styling for the join button when hovered over */
+.join-button:hover {
+  background-color: rgb(6, 95, 212); /* Background color of the button on hover */
+  color: white; /* Text color of the button on hover */
+}
+
+/* Styling for the join button when it is active (clicked) */
+.join-button:active {
+  opacity: 0.6; /* Opacity of the button when active (clicked) */
+}
+
+/* Styling for the tweet button */
+.tweet-button{
+  background-color: rgb(29, 155, 240); /* Background color of the button */
+  color: white; /* Text color of the button */
+  border: none; /* No border for the button */
+  padding-right: 16px; /* Padding on the right side of the button */
+  padding-left: 16px; /* Padding on the left side of the button */
+  padding-top: 10px; /* Padding on the top of the button */
+  padding-bottom: 10px; /* Padding on the bottom of the button */
+  border-radius: 18px; /* Rounded corners of the button */
+  font-weight: bold; /* Bold text for the button */
+  font-size: 15px; /* Font size of the button text */
+  cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+  margin-left: 8px; /* Margin on the left side of the button */
+  transition: box-shadow 0.15px; /* Transition effect for the box-shadow property */
+  vertical-align: top; /* Aligns the button vertically to the top */
+}
+
+/* Styling for the tweet button when hovered over */
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15); /* Box shadow effect on hover */
+}
