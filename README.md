@@ -2,8 +2,7 @@
 ### SimpleYouTube-Website
 
 # Overview:
-### This project is a basic front-end project built with HTML and CSS. It serves as a simple demonstration of static web page creation.
-
+### This project is a basic front-end project built with HTML and CSS. It serves as a simple demonstration of static web page creation. The pivotal concepts applied in this project encompass: 1)Hovers, Transitions, Shadows 2) Chrome DevTools & CSS Box Model 3) Display Property 4) CSS Grid 5) Flexbox & Nested Flexbox 6) Position Property 7) Nested Layout Techniques 8) div element 9) CSS specificity 10) Html Sementic elements. 
 # Getting Started
 ### 1. Clone the repository:
 ####     git clone https://github.com/saikiranthadkapally/SimpleYouTube-Website.git
