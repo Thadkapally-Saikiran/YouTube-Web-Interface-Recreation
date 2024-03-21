@@ -24,9 +24,12 @@ This project provides a basic YouTube web app built with HTML and CSS. It's desi
 
 1. **Download or clone the repository**
    ```shell
-   git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-
+   git clone https://github.com/Thadkapally-Saikiran/YouTube-Web-Application.git
+   
   - Go to the directory
+  - Run the index.html file
+  - Start Exploring!!
+    
 
 # Overview:
 ### This project is a basic front-end project built with HTML and CSS. It serves as a simple demonstration of static web page creation. The pivotal concepts applied in this project encompass: 
