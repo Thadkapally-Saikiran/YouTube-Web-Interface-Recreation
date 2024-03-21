@@ -1,4 +1,7 @@
-# YouTube Web Application ![](
+# YouTube Web Application 
+
+![](Ytube-Logo.jpg)
+
 Simple YouTube Web App written in HTML, CSS.
 
 ### Use of the Project:
