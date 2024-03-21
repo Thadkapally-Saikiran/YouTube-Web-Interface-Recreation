@@ -1,4 +1,4 @@
-# YouTube Web Application
+# YouTube Web Application ![](
 Simple YouTube Web App written in HTML, CSS.
 
 ### Use of the Project:
@@ -31,16 +31,16 @@ This project provides a basic YouTube web app built with HTML and CSS. It's desi
   - Start Exploring!!
 
 ### ScreenShots
-
+![](Ytube.png)
 
 
 ### Project Structure:
-#### * 'Channel-pictures/': Folder containing channel pictures
-#### * 'icons/': Folder containing icons.
-#### * 'thumbnails/': Folder containing thumbnails.
-#### * 'icons/': Folder containing icons.
-#### * 'intro-to-html/': Folder containing HTML introduction files.
-### * flexbox.html: HTML file for Flexbox demonstration.
-### * grid.html: HTML file for Grid demonstration.
-### * position.html: HTML file for CSS positioning demonstration.
-### * index.html: Main HTML File to execute
+ - Channel-pictures: Folder containing channel pictures
+ - icons: Folder containing icons.
+ - thumbnails: Folder containing thumbnails.
+ - icons: Folder containing icons.
+ - intro-to-html: Folder containing HTML introduction files.
+ - flexbox.html: HTML file for Flexbox demonstration.
+ - grid.html: HTML file for Grid demonstration.
+ - position.html: HTML file for CSS positioning demonstration.
+ - index.html: Main HTML File to execute
