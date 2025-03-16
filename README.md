@@ -1,6 +1,6 @@
 ## YouTube Web Interface Recreation 
 
-![](Ytube-Logo.jpg)
+![](Ytube.png)
 
 Simple YouTube Web App written in HTML, CSS.
 
@@ -32,9 +32,6 @@ This project provides a basic YouTube web app built with HTML and CSS. It's desi
   - Go to the directory
   - Run the index.html file
   - Start Exploring!!
-
-### ScreenShots
-![](Ytube.png)
 
 
 ### Project Structure:
